@@ -1,7 +1,7 @@
 sub init()
     ' Typing Animation Setup
     m.feedbackButton = m.top.FindNode("feedbackButton")
-    m.feedbackTextFull = "Give Feedback"
+    m.feedbackTextFull = "SmartChef Buddy: "
     m.feedbackCharIndex = 1
 
     m.typingTimer = createObject("roSGNode", "Timer")

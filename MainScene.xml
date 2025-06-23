@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<component name="MainScene" extends="Scene"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="http://rokudev.roku.com/rokudev/schema/RokuSceneGraph.xsd">
+
+    <script type="text/brightscript" uri="pkg:/components/MainScene/MainScene.brs" />
+
+    <children>
+        <!-- Welcome label -->
+        <Label
+            id="welcomeLabel"
+            text="Welcome to Cooking App"
+            font="MediumBold"
+            color="#F5F5DC"
+            translation="[20, 20]" />
+
+        <!-- Dish selection list -->
+        <LabelList
+            id="list"
+            translation="[150, 150]" />
+
+        <!-- Video player -->
+        <Video
+            id="Video"
+            translation="[800, 100]"
+            width="960"
+            height="540" />
+
+        <!-- Ingredient label (Make sure it's here!) -->
+        <Label
+            id="ingredients"
+            text=""
+            font="Medium"
+            color="#FFFFFF"
+            wrap="true"
+            width="600"
+            height="200"
+            translation="[150, 600]"
+            visible="false" />
+
+        <!-- Voice Icon -->
+        <Poster
+            id="voiceButton"
+            uri="pkg:/images/icon_focus_hd.png"
+            translation="[40, 650]"
+            width="80"
+            height="80"
+            visible="true" />
+
+        <!-- Smart Suggestion -->
+        <Label
+            id="smartSuggestion"
+            text="Smart Suggestion: Pasta Carbonara"
+            font="Medium"
+            translation="[150, 700]"
+            color="#F5F5DC" />
+
+        <!-- Feedback Button -->
+        <Button
+            id="feedbackButton"
+            translation="[850, 700]"
+            width="200"
+            height="60"
+             text="" />
+
+        <!-- Accessibility Label -->
+        <Label
+            id="accessibilityToggle"
+            text="👁 Accessibility Mode: OFF"
+            translation="[150, 770]"
+            font="Medium"
+            color="#F5F5DC" />
+
+        <!-- Content task -->
+        <get_channel_list
+            id="get_channel_list"
+            control="STOP" />
+    </children>
+</component>

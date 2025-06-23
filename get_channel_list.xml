@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- get_channel_list.xml for Cooking App -->
+<component name="get_channel_list" extends="Task">
+    <interface>
+        <field id="category" type="string" />
+        <field id="content" type="node" />
+    </interface>
+    <script type="text/brightscript" uri="pkg:/components/get_channel_list/get_channel_list.brs" />
+</component>
